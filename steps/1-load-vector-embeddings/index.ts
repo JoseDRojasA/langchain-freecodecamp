@@ -13,7 +13,7 @@ export const loadVectorEmbeddings = async () => {
     );
 
     const openAiEmbeddings = new OpenAIEmbeddings({
-      openAIApiKey: environment.OPEN_AI_API_KEY,
+      openAIApiKey: environment.OPENAI_API_KEY,
     });
     await SupabaseVectorStore.fromDocuments(documentSplit, openAiEmbeddings, {
       client: supabaseClient,

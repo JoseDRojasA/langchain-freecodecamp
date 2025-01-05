@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@langchain/community": "^0.3.22",
+    "@langchain/core": "^0.3.27",
     "@langchain/openai": "^0.3.16",
     "@supabase/supabase-js": "^2.47.10",
     "langchain": "^0.3.9"

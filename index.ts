@@ -1,3 +1,3 @@
-import { loadVectorEmbeddings } from "./steps/1-load-vector-embeddings";
+import { runChatbot } from "./steps/2-run-chatbot";
 
-loadVectorEmbeddings();
+runChatbot();
