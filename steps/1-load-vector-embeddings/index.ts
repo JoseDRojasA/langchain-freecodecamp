@@ -1,8 +1,8 @@
+import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
+import { OpenAIEmbeddings } from "@langchain/openai";
 import { createClient } from "@supabase/supabase-js";
 import { environment } from "../../environment";
-import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
 import { generateDocumentSplit } from "./generate-document-split";
-import { OpenAIEmbeddings } from "@langchain/openai";
 export const loadVectorEmbeddings = async () => {
   try {
     const documentSplit = await generateDocumentSplit();
